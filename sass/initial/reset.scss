@@ -157,201 +157,210 @@ img
     border-style: none;
 }
 
-/* Forms
-   ========================================================================== */
-
 /**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
+ * Forms
  */
 
+/**
+ * 1. Altere os estilos de fonte em todos os navegadores.
+ * 2. Remova a margem no Firefox e no Safari.
+ */
 button,
 input,
 optgroup,
 select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+textarea
+{
+    font-family: inherit; // 1
+    font-size: 100%;      // 1
+    line-height: 1.15;    // 1
+    margin: 0;            // 2
 }
 
 /**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
+ * Exibir o overflow no IE.
+ * 1. Exiba o transbordamento no Edge.
  */
-
 button,
-input { /* 1 */
-  overflow: visible;
+input
+{
+    overflow: visible; // 1
 }
 
 /**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
+ * Remover a herança da transformação de texto em Edge, Firefox, e IE.
+ * 1. Remova a herança de `text-transform` no Firefox.
  */
-
 button,
-select { /* 1 */
-  text-transform: none;
+select
+{
+    text-transform: none; // 1
 }
 
 /**
- * Correct the inability to style clickable types in iOS and Safari.
+ * Corrija a impossibilidade de aplicar estilos a
+ * elementos clicáveis no iOS e no Safari.
  */
-
 button,
 [type="button"],
 [type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
+[type="submit"]
+{
+    -webkit-appearance: button;
 }
 
 /**
- * Remove the inner border and padding in Firefox.
+ * Remova a borda interna e o espaçamento interno no Firefox.
  */
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+[type="submit"]::-moz-focus-inner
+{
+    border-style: none;
+    padding: 0;
 }
 
 /**
- * Restore the focus styles unset by the previous rule.
+ * Restaure os estilos de foco que foram removidos
+ * pela regra anterior.
  */
-
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+[type="submit"]:-moz-focusring
+{
+    outline: 1px dotted ButtonText;
 }
 
 /**
- * Correct the padding in Firefox.
+ * Corrija o espaçamento no Firefox.
  */
 
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
+fieldset
+{
+    padding: 0.35em 0.75em 0.625em;
 }
 
 /**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
+ * 1. Corrija a quebra de texto no Edge e no IE.
+ * 2. Corrija a herança de cor de elementos `fieldset` no IE.
+ * 3. Remova o espaçamento interno (padding) para evitar surpresas
+ *    aos desenvolvedores quando eles definirem o `padding` de elementos
+ *    `fieldset` como zero em todos os navegadores.
  */
-
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
+legend
+{
+    box-sizing: border-box; // 1
+    color: inherit;         // 2
+    display: table;         // 1
+    max-width: 100%;        // 1
+    padding: 0;             // 3
+    white-space: normal;    // 1
 }
 
 /**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * Adicione o alinhamento vertical correto em Chrome, Firefox, e Opera.
  */
-
-progress {
-  vertical-align: baseline;
+progress
+{
+    vertical-align: baseline;
 }
 
 /**
- * Remove the default vertical scrollbar in IE 10+.
+ * Remova a barra de rolagem vertical padrão no IE 10+.
  */
-
-textarea {
-  overflow: auto;
+textarea
+{
+    overflow: auto;
 }
 
 /**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
+ * 1. Adicione o dimensionamento de caixa (box sizing) correto no IE 10.
+ * 2. Remova o preenchimento no IE 10.
  */
-
 [type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
+[type="radio"]
+{
+    box-sizing: border-box; // 1
+    padding: 0;             // 2
 }
 
 /**
- * Correct the cursor style of increment and decrement buttons in Chrome.
+ * Corrigir o estilo do cursor dos botões de incremento e decremento no Chrome.
  */
-
 [type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
+[type="number"]::-webkit-outer-spin-button
+{
+    height: auto;
 }
 
 /**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
+ * 1. Corrija a aparência estranha em Chrome e Safari.
+ * 2. Corrija o estilo do contorno no Safari.
  */
+[type="search"]
+{
+    -webkit-appearance: textfield; // 1
 
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+    outline-offset: -2px;          // 2
 }
 
 /**
- * Remove the inner padding in Chrome and Safari on macOS.
+ * Remova o espaçamento interno no Chrome e no Safari no macOS.
  */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+[type="search"]::-webkit-search-decoration
+{
+    -webkit-appearance: none;
 }
 
 /**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
+ * 1. Corrija a impossibilidade de aplicar estilos a elementos clicáveis no iOS e no Safari.
+ * 2. Defina as propriedades de fonte como `inherit` no Safari.
  */
+::-webkit-file-upload-button
+{
+    -webkit-appearance: button; // 1
 
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-
-/**
- * Add the correct display in IE 10+.
- */
-
-template {
-  display: none;
+    font: inherit;              // 2
 }
 
 /**
- * Add the correct display in IE 10.
+ * Interactive
  */
 
-[hidden] {
-  display: none;
+/**
+ * Adicione a exibição correta no Edge, IE 10+ e Firefox.
+ */
+details
+{
+    display: block;
+}
+
+/**
+ * Garanta a exibição correta em todos os navegadores.
+ */
+summary
+{
+    display: list-item;
+}
+
+/**
+ * Misc
+ */
+
+/**
+ * Adicione a exibição correta no IE 10+.
+ */
+template
+{
+    display: none;
+}
+
+/**
+ * Adicione a exibição correta no IE 10.
+ */
+[hidden]
+{
+    display: none;
 }

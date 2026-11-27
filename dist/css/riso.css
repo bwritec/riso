@@ -1,3 +1,329 @@
+@charset "UTF-8";
+/**
+ * ============================================
+ * Initial
+ * ============================================
+ */
+/**
+ * Document
+ */
+/**
+ * 1. Corrija a altura da linha em todos os navegadores.
+ * 2. Impedir ajustes no tamanho da fonte após alterações de orientação no iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+ * Sections
+ */
+/**
+ * Remova a margem em todos os navegadores.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Exiba o elemento `main` de forma consistente no IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Corrija o tamanho da fonte e a margem dos elementos `h1`
+ * dentro de contextos `section` e `article` no Chrome, Firefox
+ * e Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Agrupamento de conteúdo
+ */
+/**
+ * 1. Adicione o dimensionamento de caixa (box-sizing) correto no Firefox.
+ * 2. Exiba o conteúdo excedente no Edge e no IE.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/**
+ * 1. Corrija a herança e o dimensionamento do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o dimensionamento inconsistente de fontes em `em` em todos os navegadores.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * Semântica em nível de texto
+ */
+/**
+ * Remova o fundo cinza em links ativos no IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remova a borda inferior no Chrome 57-
+ * 2. Adicione a decoração de texto correta em Chrome, Edge, IE, Opera, e Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Adicione a espessura de fonte correta em Chrome, Edge, e Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Corrija a herança e o dimensionamento do tamanho da fonte em todos os navegadores.
+ * 2. Corrija o dimensionamento inconsistente de fontes em `em` em todos os navegadores.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * Defina o tamanho de fonte correto em todos os navegadores.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Impeça que os elementos `sub` e `sup` afetem a altura da linha em
+ * todos os navegadores.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/**
+ * Conteúdo incorporado
+ */
+/**
+ * Remova a borda de imagens dentro de links no IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Forms
+ */
+/**
+ * 1. Altere os estilos de fonte em todos os navegadores.
+ * 2. Remova a margem no Firefox e no Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+ * Exibir o overflow no IE.
+ * 1. Exiba o transbordamento no Edge.
+ */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remover a herança da transformação de texto em Edge, Firefox, e IE.
+ * 1. Remova a herança de `text-transform` no Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Corrija a impossibilidade de aplicar estilos a
+ * elementos clicáveis no iOS e no Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remova a borda interna e o espaçamento interno no Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restaure os estilos de foco que foram removidos
+ * pela regra anterior.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Corrija o espaçamento no Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Corrija a quebra de texto no Edge e no IE.
+ * 2. Corrija a herança de cor de elementos `fieldset` no IE.
+ * 3. Remova o espaçamento interno (padding) para evitar surpresas
+ *    aos desenvolvedores quando eles definirem o `padding` de elementos
+ *    `fieldset` como zero em todos os navegadores.
+ */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * Adicione o alinhamento vertical correto em Chrome, Firefox, e Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remova a barra de rolagem vertical padrão no IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Adicione o dimensionamento de caixa (box sizing) correto no IE 10.
+ * 2. Remova o preenchimento no IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Corrigir o estilo do cursor dos botões de incremento e decremento no Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Corrija a aparência estranha em Chrome e Safari.
+ * 2. Corrija o estilo do contorno no Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/**
+ * Remova o espaçamento interno no Chrome e no Safari no macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Corrija a impossibilidade de aplicar estilos a elementos clicáveis no iOS e no Safari.
+ * 2. Defina as propriedades de fonte como `inherit` no Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/**
+ * Interactive
+ */
+/**
+ * Adicione a exibição correta no Edge, IE 10+ e Firefox.
+ */
+details {
+  display: block;
+}
+
+/**
+ * Garanta a exibição correta em todos os navegadores.
+ */
+summary {
+  display: list-item;
+}
+
+/**
+ * Misc
+ */
+/**
+ * Adicione a exibição correta no IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Adicione a exibição correta no IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
 /**
  * ============================================
  * Grid System
@@ -35,6 +361,352 @@
 .row {
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.col {
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  min-height: 1px;
+  float: left;
+}
+
+.col-xs-12 {
+  width: 100%;
+}
+
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+.col-xs-9 {
+  width: 75%;
+}
+
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+.col-xs-6 {
+  width: 50%;
+}
+
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+.col-xs-3 {
+  width: 25%;
+}
+
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+}
+.offset-xs-12 {
+  margin-left: 100%;
+}
+
+.offset-xs-11 {
+  margin-left: 91.66666667%;
+}
+
+.offset-xs-10 {
+  margin-left: 83.33333333%;
+}
+
+.offset-xs-9 {
+  margin-left: 75%;
+}
+
+.offset-xs-8 {
+  margin-left: 66.66666667%;
+}
+
+.offset-xs-7 {
+  margin-left: 58.33333333%;
+}
+
+.offset-xs-6 {
+  margin-left: 50%;
+}
+
+.offset-xs-5 {
+  margin-left: 41.66666667%;
+}
+
+.offset-xs-4 {
+  margin-left: 33.33333333%;
+}
+
+.offset-xs-3 {
+  margin-left: 25%;
+}
+
+.offset-xs-2 {
+  margin-left: 16.66666667%;
+}
+
+.offset-xs-1 {
+  margin-left: 8.33333333%;
+}
+
+.offset-xs-0 {
+  margin-left: 0%;
+}
+
+@media (min-width: 768px) {
+  .offset-sm-12 {
+    margin-left: 100%;
+  }
+  .offset-sm-11 {
+    margin-left: 91.66666667%;
+  }
+  .offset-sm-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  .offset-sm-8 {
+    margin-left: 66.66666667%;
+  }
+  .offset-sm-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  .offset-sm-5 {
+    margin-left: 41.66666667%;
+  }
+  .offset-sm-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  .offset-sm-2 {
+    margin-left: 16.66666667%;
+  }
+  .offset-sm-1 {
+    margin-left: 8.33333333%;
+  }
+  .offset-sm-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  .offset-md-12 {
+    margin-left: 100%;
+  }
+  .offset-md-11 {
+    margin-left: 91.66666667%;
+  }
+  .offset-md-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  .offset-md-8 {
+    margin-left: 66.66666667%;
+  }
+  .offset-md-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  .offset-md-5 {
+    margin-left: 41.66666667%;
+  }
+  .offset-md-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  .offset-md-2 {
+    margin-left: 16.66666667%;
+  }
+  .offset-md-1 {
+    margin-left: 8.33333333%;
+  }
+  .offset-md-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  .offset-lg-12 {
+    margin-left: 100%;
+  }
+  .offset-lg-11 {
+    margin-left: 91.66666667%;
+  }
+  .offset-lg-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  .offset-lg-8 {
+    margin-left: 66.66666667%;
+  }
+  .offset-lg-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  .offset-lg-5 {
+    margin-left: 41.66666667%;
+  }
+  .offset-lg-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  .offset-lg-2 {
+    margin-left: 16.66666667%;
+  }
+  .offset-lg-1 {
+    margin-left: 8.33333333%;
+  }
+  .offset-lg-0 {
+    margin-left: 0%;
+  }
 }
 
 /*# sourceMappingURL=riso.css.map */
